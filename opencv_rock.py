@@ -137,7 +137,7 @@ def export_to_dxf(rock_blocks, filename="HSL80.dxf"):
         "0.04-0.06": 2,
         "0.02-0.04": 3,
         "0.01-0.02": 4,
-        "0.01-0.01": 5,
+        "0.005-0.01": 5,
     }
     for grain_group, color in layer_colors.items():
         doc.layers.new(name=f"Grain_{grain_group}", dxfattribs={"color": color})
